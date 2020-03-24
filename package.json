@@ -1,0 +1,28 @@
+{
+  "name": "answer-this-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:server": "nodemon build/app.js",
+    "start": "concurrently npm:start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/express": "^4.17.3",
+    "@types/node": "^13.9.3",
+    "@types/pg": "^7.14.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "pg": "^7.18.2",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
